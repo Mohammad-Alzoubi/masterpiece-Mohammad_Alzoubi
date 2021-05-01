@@ -85,7 +85,7 @@
                             <div class="text-danger">{{ $errors->first('password') }}</div>
                         @endif
                     </div>
-                    <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" style="background: #00D231">Sign in</button>
                 </form>
             </div>
         </div>

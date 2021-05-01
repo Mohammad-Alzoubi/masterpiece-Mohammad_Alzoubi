@@ -97,6 +97,7 @@
               </div>
           </div>
       </div>
+      <div style="height: 210px;background:#EFEFF6"></div>
   </div>
   <!-- end total followers   -->
 

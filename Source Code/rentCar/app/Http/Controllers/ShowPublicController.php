@@ -10,6 +10,11 @@ class ShowPublicController extends Controller
     // Show Vehicle HomePage
     public function index(){
         $vehicles = Vehicle::all();
+        // $vehicles = DB::table('vehicles')
+            // ->select('*')
+            // ->limit(9)
+            // ->get();
+        // dd($vehicles);
         return view('Pages.index', compact('vehicles'));
     }
     

@@ -12,9 +12,10 @@ class VehiclesController extends Controller
         // ->select('*')
             ->select('vehicles.id', 'vehicles.VehiclesTitle','brands.name AS brand_name','vehicles.VehicleImage', 'vehicles.price', 'vehicles.VehicleDescription', 'vehicles.FuelType', 'vehicles.ModelYear', )
             ->join("brands", "vehicles.Brand_id", "brands.id")
+            ->orderBy('id')
             ->get();
 
-            // dd($vehicles->brand_name);
+            // dd($vehicles);
         $brands = Brand::all();
         return view('admin.vehicles',compact('vehicles', 'brands'));
     }

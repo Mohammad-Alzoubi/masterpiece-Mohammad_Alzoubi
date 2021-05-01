@@ -8,8 +8,8 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="rn-page-title-inner">
-							<h1>Fullwidth</h1>
-							<p>Cras eros lorem, rhoncus ac risus sit amet, fringilla ultrices purus.</p>
+							<h1>Terms & Conditions</h1>
+							{{-- <p>Cras eros lorem, rhoncus ac risus sit amet, fringilla ultrices purus.</p> --}}
 						</div>
 					</div>
 				</div>
@@ -20,13 +20,47 @@
 		<!-- Page Content-->
 		<div class="rn-section">
 			<div class="container pb-15">
+				<h1 style="text-align: center" class="rn-page-title-inner">Terms & Conditions</h1>
 				<div class="row">
-					<div class="col-lg-12">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies erat non augue pretium mollis. Nunc ut mauris volutpat, imperdiet nunc et, mattis erat. Sed id pretium est. Suspendisse magna diam, ultrices ac arcu ut, aliquam tincidunt est. In nisl nulla, dapibus id ante eget, interdum ultricies magna. Maecenas lectus urna, pulvinar consequat lobortis sed, sodales a libero. Pellentesque ac magna tellus. Phasellus nisl lorem, convallis vel cursus porttitor, ullamcorper nec dui.</p>
-						<p>Aenean at nibh massa. Mauris magna sapien, sollicitudin eget finibus eu, aliquet at lectus. Cras cursus eget libero id blandit. Fusce quis ligula id tellus euismod posuere. Nunc nunc ex, ultrices ac pellentesque eu, ultricies nec justo. Aenean dolor neque, tristique in lectus at, ornare bibendum ligula. Curabitur scelerisque, ligula sit amet aliquet finibus, diam erat pharetra dolor, ac vulputate nunc ex vel ante. Etiam nec efficitur sem. Suspendisse nisl velit, rutrum nec magna at, cursus egestas nunc. Maecenas laoreet quam sit amet erat pretium, vel lobortis nunc fermentum. Cras ullamcorper mi nec vehicula sagittis. Mauris ut neque orci. Nunc non ornare neque, vel vestibulum libero.</p>
-						<p>Duis gravida ante sed mi mattis hendrerit. Nullam efficitur ligula eget feugiat vehicula. Aliquam quis dui scelerisque, tempus velit posuere, sodales justo. Cras in faucibus ante. Suspendisse eget viverra nunc. Nam luctus risus diam, efficitur bibendum mauris feugiat a. Sed efficitur sit amet sapien quis porta. Cras nec nisl erat. Integer rutrum augue non pharetra placerat. Duis quis condimentum velit. Morbi placerat nec ipsum eget aliquam.</p>
-						<p>Curabitur hendrerit gravida risus, consectetur sollicitudin mauris. Praesent fringilla consequat velit, at eleifend lectus tempor at. Donec auctor pretium tempus. Donec sit amet est nec nulla sagittis malesuada. Aenean ac felis urna. Aliquam ipsum ligula, rutrum id consectetur eu, dapibus sit amet quam. Donec varius malesuada turpis. Phasellus volutpat non dolor vel lacinia. Pellentesque ultrices ut libero vel pellentesque. Curabitur in quam porta, elementum lorem nec, euismod arcu. Mauris laoreet ipsum eros, id ornare nibh varius et. Duis bibendum a purus a euismod. Sed a pretium sem, nec sollicitudin urna.</p>
-						<p>Nulla lacinia turpis non justo congue, eu tincidunt dolor pulvinar. Duis laoreet sed sem quis eleifend. Phasellus sed cursus tortor. Morbi rhoncus mi non vulputate imperdiet. Aenean sem mi, rhoncus vel rhoncus ut, sollicitudin convallis enim. Nunc malesuada pretium felis vel scelerisque. Sed vulputate, augue dictum venenatis sagittis, urna leo condimentum orci, id pellentesque ipsum tortor at dolor. Integer lobortis nulla ullamcorper commodo ullamcorper. Aliquam erat volutpat. Mauris vehicula nibh vel mauris efficitur, eu sollicitudin felis ornare. Sed nec laoreet est. Vivamus fringilla quam ex, id ultricies risus tincidunt et. In tincidunt felis tortor, et sodales magna accumsan et. Proin sit amet erat ut magna tempor posuere. Nunc eleifend dictum nisl, non condimentum purus pellentesque quis. Praesent pharetra volutpat leo, eget accumsan nisl porttitor eu.</p>
+					<div class="col-lg-12" class="container margin-150" style="border: solid 3px #e8e8e8;padding: 20px 30px;text-align: justify;box-shadow: 0 0 10px #e8e8e8;margin-bottom:20px">
+						<p dir="ltr"><strong>Terms &amp; Conditions</strong><br />
+							<br />
+							<strong>Rental Policy:&nbsp;</strong><br />
+							<br />
+							RentNow Rent A Car Jordan will provide full rental and maintenance contracts, insurance coverage and 24-hour roadside assistance.
+							
+							<p><strong>Additional driver</strong></p>
+							
+							<p>Additional driver is a free of charge but it&#39;s subject to fulfillment of RentNow conditions.</p>
+							
+							<p><strong>Accident/Damage</strong></p>
+							
+							<p>In the event of an accident, or when the car gets damaged when in a stationary position, the renter should not move the car and should inform the police and get the police report and inform RentNow company. Failing to produce the report, the renter will be liable for all the cost incurred as a result of damage and injury, for more details, please read the rental contract agreement.</p>
+							
+							<p><strong>Corporate Account</strong></p>
+							
+							<p>Credit facility is available to local companies. Special rates are available for long lease contracts. The details will be provided upon request.</p>
+							
+							<p><strong>Chauffeur Service</strong></p>
+							
+							<p>Chauffeurs are available at JOD 25/- for 8 hours and JOD 3/- for each extra hour. RentNow Chauffeurs are also available on Fridays and other Public Holiday on additional surcharges to cover their food and accommodation.</p>
+							
+							<p><strong>Driver&#39;s Age</strong></p>
+							
+							<p>All drivers must be at least 21 years old .</p>
+							
+							<p><strong>Driving license</strong></p>
+							
+							<p>Any valid Driving License is accepted, National or International Valid driving license is accepted.</p>
+							
+							<p><strong>Delivery &amp; Collection</strong></p>
+							
+							<p>RentNow provide delivery and collection of vehicles 24 hours 7 days a week.</p>
+							
+							<p><strong>Geographical Limits</strong></p>
+							
+							<p>All cars should be driven within the limits of the Hashemite Kingdom of Jordan.<br />
+							<br />
 					</div>
 				</div>
 			</div>

@@ -46,7 +46,7 @@
                                 <input  name="image" type="file" class="form-control">
                             </div>
                             <div>
-                                <button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block" name="submit">Add
+                                <button id="payment-button" style="background: #00D231" type="submit" class="btn btn-lg btn-info btn-block" name="submit">Add
                                 </button>
                             </div>
                         </form>

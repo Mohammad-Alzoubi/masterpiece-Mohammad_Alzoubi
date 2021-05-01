@@ -70,7 +70,7 @@ class ShowSearchCarController extends Controller
         $searchPassenger = $request->input('passengers');
         $search_Sort     = $request->input('sort');
         $search_Color    = $request->input('color');
-        // dd($search_Color);
+        // dd($searchBrand);
 
 
         $vehicles = Vehicle::query()->get();
@@ -95,8 +95,14 @@ class ShowSearchCarController extends Controller
                 ->where('Brand_id', 'LIKE', "%{$searchBrand}%")
                 ->get();
         }
+        
+        if ($search_Color) {
+            $vehicles = Vehicle::query()
+                ->where('color', 'LIKE', "%{$search_Color}%")
+                ->get();
+        }
 
-        if ($searchBrand && $searchPassenger && $search_Color) {
+        if ($search_Color && $searchBrand && $searchPassenger) {
             $vehicles = Vehicle::query()
                 ->where('Passengers', 'LIKE', "%{$searchPassenger}%")
                 ->where('color', 'LIKE', "%{$search_Color}%")
@@ -104,11 +110,6 @@ class ShowSearchCarController extends Controller
                 ->get();
         }
 
-        if ($search_Color) {
-            $vehicles = Vehicle::query()
-                ->where('color', 'LIKE', "%{$search_Color}%")
-                ->get();
-        }
 
         if ($search_Sort) {
             $vehicles = Vehicle::query()
@@ -135,7 +136,9 @@ class ShowSearchCarController extends Controller
         ->distinct()
         ->orderBy('Passengers')
         ->get();
+
         $brands = Brand::all();
+        // dd($brands);
         return view('Pages.car-search', compact('vehicles','brands', 'passengers'));
     }
 

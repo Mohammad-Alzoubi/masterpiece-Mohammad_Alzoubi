@@ -30,10 +30,10 @@ class AdminController extends Controller
         }
 
         $var = new Admin;
-        $var->name = $request->input('name');
-        $var->email = $request->input('email');
+        $var->name     = $request->input('name');
+        $var->email    = $request->input('email');
         $var->password = $request->input('password');
-        $var->image = $imageName;
+        $var->image    = $imageName;
 
         $var->save();
         return back()->with('success', 'Admin created successfully.');
@@ -51,10 +51,10 @@ class AdminController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'name' => 'required|min:4',
-            'email' => 'required|email',
+            'name'     => 'required|min:4',
+            'email'    => 'required|email',
             'password' => 'required|min:6',
-            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image'    => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
         if (!empty(request()->image)) {
             $imageName = time() . '.' . request()->image->getClientOriginalExtension();
@@ -65,10 +65,10 @@ class AdminController extends Controller
         }
 
         $admin = Admin::find($id);
-        $admin->name = $request->get('name');
-        $admin->email = $request->get('email');
+        $admin->name     = $request->get('name');
+        $admin->email    = $request->get('email');
         $admin->password = $request->get('password');
-        $admin->image = $imageName;
+        $admin->image    = $imageName;
         $admin->save();
 
         return redirect('/admin')->with('success', 'Contact updated!');

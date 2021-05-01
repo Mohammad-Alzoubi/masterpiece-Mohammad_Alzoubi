@@ -92,14 +92,17 @@
 											<i class="fas fa-map-marker-alt "></i>
 											<select class="pl-30 text-white" name="pickup_location"required="required">
 												<option class="text-secondary" disabled selected>Pickup Location</option>
-												<option class="text-secondary" value="Alabama">Alabama</option>
-												<option class="text-secondary" value="Alaska">Alaska</option>
-												<option class="text-secondary" value="Arizona">Arizona</option>
-												<option class="text-secondary" value="Arkansas">Arkansas</option>
-												<option class="text-secondary" value="California">California</option>
-												<option class="text-secondary" value="Colorado">Colorado</option>
-												<option class="text-secondary" value="Connecticut">Connecticut</option>
-												<option class="text-secondary" value="Delaware">Delaware</option>
+												<option class="text-secondary" value="Office Amman">Office Amman</option>
+												<option class="text-secondary" value="Airport office">Airport office</option>
+												<option class="text-secondary" value="Madaba City & Hotel Delivery">Madaba City & Hotel Delivery</option>
+												<option class="text-secondary" value="Allenby Bridge">Allenby Bridge</option>
+												<option class="text-secondary" value="Dead Sea">Dead Sea</option>
+												<option class="text-secondary" value="Petra City">Petra City</option>
+												<option class="text-secondary" value="Aqaba office">Aqaba office</option>
+												<option class="text-secondary" value="Jordan Valley Crossing">Jordan Valley Crossing</option>
+												<option class="text-secondary" value="Amman Queen alia airport">Amman Queen alia airport</option>
+												<option class="text-secondary" value="Amman Downtown">Amman Downtown</option>
+												<option class="text-secondary" value="King Hussein International Airport">King Hussein International Airport</option>
 											</select>
 										</div>
 									</div>
@@ -122,14 +125,17 @@
 											<i class="fas fa-map-marker-alt"></i>
 											<select class="pl-30 text-white" name="drop_location"required="required">
 												<option class="text-secondary" disabled selected>Drop Location</option>
-												<option class="text-secondary" value="Alabama">Alabama</option>
-												<option class="text-secondary" value="Alaska">Alaska</option>
-												<option class="text-secondary" value="Arizona">Arizona</option>
-												<option class="text-secondary" value="Arkansas">Arkansas</option>
-												<option class="text-secondary" value="California">California</option>
-												<option class="text-secondary" value="Colorado">Colorado</option>
-												<option class="text-secondary" value="Connecticut">Connecticut</option>
-												<option class="text-secondary" value="Delaware">Delaware</option>
+												<option class="text-secondary" value="Office Amman">Office Amman</option>
+												<option class="text-secondary" value="Airport office">Airport office</option>
+												<option class="text-secondary" value="Madaba City & Hotel Delivery">Madaba City & Hotel Delivery</option>
+												<option class="text-secondary" value="Allenby Bridge">Allenby Bridge</option>
+												<option class="text-secondary" value="Dead Sea">Dead Sea</option>
+												<option class="text-secondary" value="Petra City">Petra City</option>
+												<option class="text-secondary" value="Aqaba office">Aqaba office</option>
+												<option class="text-secondary" value="Jordan Valley Crossing">Jordan Valley Crossing</option>
+												<option class="text-secondary" value="Amman Queen alia airport">Amman Queen alia airport</option>
+												<option class="text-secondary" value="Amman Downtown">Amman Downtown</option>
+												<option class="text-secondary" value="King Hussein International Airport">King Hussein International Airport</option>
 											</select>
 										</div>
 									</div>
@@ -432,7 +438,6 @@
 							</div>
 						</div>
 						<!-- End Testimonials-->
-
 					</div>
 					<div class="col-lg-6">
 						<div class="row">

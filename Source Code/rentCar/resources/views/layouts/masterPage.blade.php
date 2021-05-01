@@ -143,7 +143,7 @@
 										<a href="{{asset('index')}}">Home</a>
 									</li>
 									<li>
-										<a href="cars">Cars 
+										<a href="{{asset('cars')}}">Cars 
 											<i class="lnr lnr-chevron-down"></i>
 										</a>
 										<ul>
@@ -155,6 +155,7 @@
 											</li>
 										</ul>
 									</li>
+
 									<li>
 										<a href="#">Pages 
 											<i class="lnr lnr-chevron-down"></i>

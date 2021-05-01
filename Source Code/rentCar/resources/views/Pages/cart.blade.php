@@ -10,7 +10,7 @@
 					<div class="col-lg-12">
 						<div class="rn-page-title-inner">
 							<h1>Cart</h1>
-							<p>Cras eros lorem, rhoncus ac risus sit amet, fringilla ultrices purus.</p>
+							{{-- <p>Cras eros lorem, rhoncus ac risus sit amet, fringilla ultrices purus.</p> --}}
 						</div>
 					</div>
 				</div>

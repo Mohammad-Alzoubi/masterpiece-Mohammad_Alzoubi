@@ -27,7 +27,7 @@
                 @endif
               </div>
               <div>
-                <button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block" name="submit">Add
+                <button id="payment-button" type="submit" style="background: #00D231" class="btn btn-lg btn-info btn-block" name="submit">Add
                 </button>
               </div>
             </form>

@@ -75,15 +75,17 @@ Bluetooth USB_input Safe WI_FI Heated_Seats FM_Radio Air_Conditioner Ascending 1
 									<select class="pl-30" name="pickup_location">
 										<option class="text-secondary" disabled selected>Pickup Location</option>
 										{{-- <option class="text-secondary" value={{$bookingDetails->pickup_location}}>{{$bookingDetails->pickup_location}}</option> --}}
-										<option class="text-secondary" value="Alabama">Alabama</option>
-										<option class="text-secondary" value="Alaska">Alaska</option>
-										<option class="text-secondary" value="American">American Samoa</option>
-										<option class="text-secondary" value="Arizona">Arizona</option>
-										<option class="text-secondary" value="Arkansas">Arkansas</option>
-										<option class="text-secondary" value="California">California</option>
-										<option class="text-secondary" value="Colorado">Colorado</option>
-										<option class="text-secondary" value="Connecticut">Connecticut</option>
-										<option class="text-secondary" value="Delaware">Delaware</option>
+										<option class="text-secondary" value="Office Amman">Office Amman</option>
+										<option class="text-secondary" value="Airport office">Airport office</option>
+										<option class="text-secondary" value="Madaba City & Hotel Delivery">Madaba City & Hotel Delivery</option>
+										<option class="text-secondary" value="Allenby Bridge">Allenby Bridge</option>
+										<option class="text-secondary" value="Dead Sea">Dead Sea</option>
+										<option class="text-secondary" value="Petra City">Petra City</option>
+										<option class="text-secondary" value="Aqaba office">Aqaba office</option>
+										<option class="text-secondary" value="Jordan Valley Crossing">Jordan Valley Crossing</option>
+										<option class="text-secondary" value="Amman Queen alia airport">Amman Queen alia airport</option>
+										<option class="text-secondary" value="Amman Downtown">Amman Downtown</option>
+										<option class="text-secondary" value="King Hussein International Airport">King Hussein International Airport</option>
 									</select>
 								</div>
 
@@ -96,15 +98,17 @@ Bluetooth USB_input Safe WI_FI Heated_Seats FM_Radio Air_Conditioner Ascending 1
 									<select class="pl-30" name="drop_location">
 										<option class="text-secondary" disabled selected>Drop Location</option>
 										{{-- <option class="text-secondary" value={{$bookingDetails->drop_location}}>{{$bookingDetails->drop_location}}</option> --}}
-										<option class="text-secondary" value="Alabama">Alabama</option>
-										<option class="text-secondary" value="Alaska">Alaska</option>
-										<option class="text-secondary" value="American">American Samoa</option>
-										<option class="text-secondary" value="Arizona">Arizona</option>
-										<option class="text-secondary" value="Arkansas">Arkansas</option>
-										<option class="text-secondary" value="California">California</option>
-										<option class="text-secondary" value="Colorado">Colorado</option>
-										<option class="text-secondary" value="Connecticut">Connecticut</option>
-										<option class="text-secondary" value="Delaware">Delaware</option>
+										<option class="text-secondary" value="Office Amman">Office Amman</option>
+										<option class="text-secondary" value="Airport office">Airport office</option>
+										<option class="text-secondary" value="Madaba City & Hotel Delivery">Madaba City & Hotel Delivery</option>
+										<option class="text-secondary" value="Allenby Bridge">Allenby Bridge</option>
+										<option class="text-secondary" value="Dead Sea">Dead Sea</option>
+										<option class="text-secondary" value="Petra City">Petra City</option>
+										<option class="text-secondary" value="Aqaba office">Aqaba office</option>
+										<option class="text-secondary" value="Jordan Valley Crossing">Jordan Valley Crossing</option>
+										<option class="text-secondary" value="Amman Queen alia airport">Amman Queen alia airport</option>
+										<option class="text-secondary" value="Amman Downtown">Amman Downtown</option>
+										<option class="text-secondary" value="King Hussein International Airport">King Hussein International Airport</option>
 									</select>
 								</div>
 
@@ -156,7 +160,7 @@ Bluetooth USB_input Safe WI_FI Heated_Seats FM_Radio Air_Conditioner Ascending 1
 											</button>
 											@else
 											<button class="btn btn-main btn-lg btn-shadow btn-block">
-												<a href="{{asset('login')}}" style="color: #FFF"> Logging before Booking</a>
+												<a href="{{asset('login')}}" style="color: #FFF"> Booking Now</a>
 												{{-- <i class="fas fa-search"></i> --}}
 											</button>
 								@endif

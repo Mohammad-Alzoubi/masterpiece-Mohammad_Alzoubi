@@ -9,7 +9,7 @@
 					<div class="col-lg-12">
 						<div class="rn-page-title-inner">
 							<h1>Car Search</h1>
-							<p>Cras eros lorem, rhoncus ac risus sit amet, fringilla ultrices purus.</p>
+							{{-- <p>Cras eros lorem, rhoncus ac risus sit amet, fringilla ultrices purus.</p> --}}
 						</div>
 					</div>
 				</div>
@@ -70,6 +70,12 @@
 											<label>
 												<input type="checkbox" value="red" name="color">
 												<span class="rn-color-red"></span>
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox" value="blue" name="color">
+												<span style="background: blue"></span>
 											</label>
 										</li>
 									</ul>

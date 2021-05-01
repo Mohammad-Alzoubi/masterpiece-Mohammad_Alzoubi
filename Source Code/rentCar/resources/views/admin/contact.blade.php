@@ -45,7 +45,11 @@
           </div>
       </div>
       <!-- end basic table  -->
-  </div>
+
+    </div>
+    <div style="height: 300px;background:#EFEFF6">
+
+    </div>
   </div>
 </div>
 @endsection

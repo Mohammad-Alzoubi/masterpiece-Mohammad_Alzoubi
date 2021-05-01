@@ -133,6 +133,7 @@
 									<option value='black'>Black</option>
 									<option value='white'>White</option>
 									<option value='gray'>Gray</option>
+									<option value='blue'>Blue</option>
                 </select>
                 @if ($errors->has('transmission'))
                 <div class="alert alert-danger">{{ $errors->first('transmission') }}</div>
@@ -200,7 +201,7 @@
               <hr>
 
               <div>
-                <button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block" name="submit">Add
+                <button id="payment-button" style="background: #00D231" type="submit" class="btn btn-lg btn-info btn-block" name="submit">Add
                 </button>
               </div>
 

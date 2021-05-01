@@ -15,9 +15,9 @@ class CreateOrderVehiclesTable extends Migration
     {
         Schema::create('order_vehicles', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('vehicles_id');
-            $table->bigInteger('customer_id');
-            $table->bigInteger('booking_id');
+            $table->unsignedBigInteger('vehicles_id');
+            $table->unsignedBigInteger('customer_id');
+            $table->unsignedBigInteger('booking_id');
             $table->string('vehiclesName');
             $table->string('customerName');
             $table->float('total_price');
@@ -28,8 +28,9 @@ class CreateOrderVehiclesTable extends Migration
             $table->string('status')->default('Not Confirmed yet');
             $table->timestamps();
 
-            // Image Driving
-            // Identity Image
+            $table->foreign('vehicles_id')->references('id')->on('vehicles')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('booking_id')->references('id')->on('bookings')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

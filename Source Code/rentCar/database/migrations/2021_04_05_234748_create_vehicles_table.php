@@ -28,9 +28,14 @@ class CreateVehiclesTable extends Migration
             $table->bigInteger('Doors');
             $table->bigInteger('Passengers');
             $table->bigInteger('Luggages');
-            $table->bigInteger('Brand_id');
+            $table->unsignedBigInteger('Brand_id');
             $table->string('color')->default('color');
             $table->string('status')->default('1');
+            // **********************************
+            
+            $table->foreign('Brand_id')->references('id')->on('brands')->onDelete('cascade')->onUpdate('cascade');
+
+            // **********************************
 
             // ->nullable(0)->default(0);
             $table->string('AudioInput')->nullable()->default('0');
