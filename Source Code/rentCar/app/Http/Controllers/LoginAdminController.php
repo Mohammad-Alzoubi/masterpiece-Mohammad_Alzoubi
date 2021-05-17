@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class LoginAdminController extends Controller
 {
@@ -19,11 +20,13 @@ class LoginAdminController extends Controller
             'email'    => 'required',
             'password' => 'required',
         ]);
-        $Admin = Admin::where( 'password', "=", request()->password ,'AND', 'email', "=", request()->email)
+        $Admin = Admin::where('email', "=", request()->email)
             ->get();
             // dd($Admin);
+            // 'password', "=", request()->password ,'AND', 
 
-        if (count($Admin)) {
+        if (count($Admin) && Hash::check(request()->password, $Admin->first()->password)) {
+            
             $request->session()->put("loginUser", ["id" => $Admin[0]->id, "role" => "admin"]);
             return redirect('/admin/dashboard');
         }else{

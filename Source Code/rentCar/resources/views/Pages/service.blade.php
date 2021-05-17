@@ -40,7 +40,7 @@
 							</div>
 							<div class="rn-service-title">Best Price Guarantee</div>
 							<div class="rn-service-desc">
-								<p>Fusce blandit at tortor vitae ultricies. Praesent efficitur feugiat leo id tempus. Sed pulvinar gravida sodales.</p>
+								<p>Our Best Price Guarantee means that you can be sure of booking at the best rate.</p>
 							</div>
 						</div>
 						<!-- End Service Item-->
@@ -53,9 +53,9 @@
 							<div class="rn-service-icon">
 								<i class="lnr lnr-phone-handset"></i>
 							</div>
-							<div class="rn-service-title">Phone Reservation</div>
+							<div class="rn-service-title">24/7 Customer Support</div>
 							<div class="rn-service-desc">
-								<p>Fusce blandit at tortor vitae ultricies. Praesent efficitur feugiat leo id tempus. Sed pulvinar gravida sodales.</p>
+								<p>It includes assistance in planning, installation, training, troubleshooting, maintenance, upgrading, and disposal of a product</p>
 							</div>
 						</div>
 						<!-- End Service Item-->
@@ -100,7 +100,7 @@
 							</div>
 							<div class="rn-service-title">Reservation Anytime</div>
 							<div class="rn-service-desc">
-								<p>Fusce blandit at tortor vitae ultricies. Praesent efficitur feugiat leo id tempus. Sed pulvinar gravida sodales.</p>
+								<p>You can change the car rental date. You can go somewhere else.</p>
 							</div>
 						</div>
 						<!-- End Service Item-->
@@ -163,10 +163,10 @@
 												<div class="rn-testimonial-author-thumb">
 													<img src="assets/images/author-1.jpg" alt="John Doe" srcset="assets/images/author-1.jpg 1x, assets/images/author-1@2x.jpg 2x"/>
 												</div>
-												<div class="rn-testimonial-author-info"><strong>Katherine Powell</strong>
+												<div class="rn-testimonial-author-info"><strong>Anfal</strong>
 												</div>
 											</div>
-											<p>Curabitur neque turpis, pellentesque vel semper ut, tempor vel arcu. Nulla facilisi. Phasellus feugiat nunc eget eros varius, et mollis magna elementum.</p>
+											<p>Before booking I was sceptical about the transport, but it worked faultlessly and we never had to wait.</p>
 											<footer>
 												<div class="rn-testimonial-rating">
 													<i class="fas fa-star"></i>
@@ -188,10 +188,10 @@
 												<div class="rn-testimonial-author-thumb">
 													<img src="assets/images/author-2.jpg" alt="John Doe" srcset="assets/images/author-2.jpg 1x, assets/images/author-2@2x.jpg 2x"/>
 												</div>
-												<div class="rn-testimonial-author-info"><strong>Patrick Cox</strong>
+												<div class="rn-testimonial-author-info"><strong>Maher</strong>
 												</div>
 											</div>
-											<p>Curabitur neque turpis, pellentesque vel semper ut, tempor vel arcu. Nulla facilisi. Phasellus feugiat nunc eget eros varius, et mollis magna elementum.</p>
+											<p>RentNow has been providing extremely good service for the past years and this is especially helpful for us who are based overseas.</p>
 											<footer>
 												<div class="rn-testimonial-rating">
 													<i class="fas fa-star"></i>

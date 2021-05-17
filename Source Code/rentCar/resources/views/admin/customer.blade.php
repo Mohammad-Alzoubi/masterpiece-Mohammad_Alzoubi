@@ -31,6 +31,8 @@
                                     <input  name="email" type="email" class="form-control" value="{{ old('email') }}">
                                     @if ($errors->has('email'))
                                         <div class="alert alert-danger">{{ $errors->first('email') }}</div>
+                                    @elseif($message = Session::get('failed'))
+                                        <p class="text-danger">{{ $message }}</p>
                                     @endif
                                 </div>
                                 <div class="form-group">

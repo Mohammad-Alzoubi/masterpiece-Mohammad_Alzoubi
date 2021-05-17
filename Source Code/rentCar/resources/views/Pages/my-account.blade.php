@@ -94,7 +94,7 @@
                 </div>
                 @else
                 <div class="tab-pane fade" id="orders">
-                  <h3>booking emty...</h3>
+                  <h3>Booking empty...</h3>
                 </div>
 @endif
                 <div class="tab-pane fade" id="account-details">

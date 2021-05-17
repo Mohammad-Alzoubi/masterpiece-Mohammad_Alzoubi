@@ -71,14 +71,14 @@
                         {{ csrf_field() }}
                         <div class="login_input">
                             <label>Name <span style="color:#F00">*</span></label>
-                            <input type="text" name="name" >
+                            <input type="text" name="name" value="{{old('name')}}">
                             @if ($errors->has('name'))
                             <p class="text-danger">{{ $errors->first('name') }}</p>
                             @endif
                         </div>
                         <div class="login_input">
                             <label>Email address <span style="color:#F00">*</span></label>
-                            <input type="email" name="email">
+                            <input type="email" name="email" value="{{old('email')}}">
                             @if ($errors->has('email'))
                             <span class="text-danger">{{ $errors->first('email') }}</span>
                             @elseif($message = Session::get('failed'))

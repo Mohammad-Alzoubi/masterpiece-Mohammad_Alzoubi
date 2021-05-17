@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Admin;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Crypt;
 
 class AdminController extends Controller
 {
@@ -29,14 +31,21 @@ class AdminController extends Controller
             $imageName = 'default.png';
         }
 
+        $admin = Admin::where('email', '=', $request->email)
+            ->get();
+            // dd($admin);
+        if (count($admin)) {
+            return back()->with('failed', 'Email already exists');
+        } else {
         $var = new Admin;
         $var->name     = $request->input('name');
         $var->email    = $request->input('email');
-        $var->password = $request->input('password');
+        $var->password = Hash::make($request->input('password'));
         $var->image    = $imageName;
 
         $var->save();
         return back()->with('success', 'Admin created successfully.');
+        }
     }
 
 
@@ -44,6 +53,13 @@ class AdminController extends Controller
     public function edit($id)
     {
         $admin = Admin::find($id);
+
+        // dd($admin);
+        // $admin1 = Crypt::decrypt($admin->password);
+        // $admin1 = Crypt::decrypt('$2y$10$TCNlSTpSVRb9HP8X3hzAWOC2WNe3WJpVvK60YL4Zjdvt1m14UoXLy');
+        // $admin1 = Crypt::decryptString('$2y$10$TCNlSTpSVRb9HP8X3hzAWOC2WNe3WJpVvK60YL4Zjdvt1m14UoXLy');
+        // $admin1 = $admin->password;
+        // dd($admin1);
         return view('admin.editAdmin', compact('admin'));
     }
 
@@ -67,7 +83,7 @@ class AdminController extends Controller
         $admin = Admin::find($id);
         $admin->name     = $request->get('name');
         $admin->email    = $request->get('email');
-        $admin->password = $request->get('password');
+        $admin->password = Hash::make($request->input('password'));
         $admin->image    = $imageName;
         $admin->save();
 

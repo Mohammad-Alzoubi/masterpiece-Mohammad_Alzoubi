@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Customer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class CustomerController extends Controller
 {
@@ -27,14 +28,20 @@ class CustomerController extends Controller
             $imageName= 'default.png';
         }
 
+        $customer = Customer::where('email', '=', $request->email)
+            ->get();
+        if (count($customer)) {
+            return back()->with('failed', 'Email already exists');
+        } else {
         $var = new Customer;
         $var -> name     = $request->input('name');
         $var -> email    = $request->input('email');
-        $var -> password = $request->input('password');
+        $var -> password = Hash::make($request->input('password'));
         $var ->image     = $imageName;
         $var ->save();
 
         return back()->with('success', 'Customer created successfully');
+        }
     }
 
     public function edit($id)
@@ -61,10 +68,10 @@ class CustomerController extends Controller
         }
 
         $Customer = Customer::find($id);
-        $Customer->name =  $request->get('name');
-        $Customer->email = $request->get('email');
-        $Customer->password = $request->get('password');
-        $Customer->image = $imageName;
+        $Customer->name     = $request->get('name');
+        $Customer->email    = $request->get('email');
+        $Customer->password = Hash::make($request->input('password'));
+        $Customer->image    = $imageName;
         $Customer->save();
 
         return redirect('admin/customer')->with('success', 'Contact updated!');

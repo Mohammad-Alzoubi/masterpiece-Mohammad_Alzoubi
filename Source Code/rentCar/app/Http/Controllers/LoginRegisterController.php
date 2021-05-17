@@ -5,6 +5,8 @@ use App\Admin;
 use App\Customer;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Hash;
+
 class LoginRegisterController extends Controller
 {
     public function login(Request $request)
@@ -24,9 +26,13 @@ class LoginRegisterController extends Controller
         //     return redirect('/login')->with('Error', 'Wrong email or password');
         // }
 
-        $Customer = Customer::where('email', "=", request()->emailL, "And", 'password', "=", request()->passwordL)
-            ->get();
-        if (count($Customer)) {
+        $Customer = Customer::where('email', "=", request()->emailL)->get();
+
+            // dd($Customer);
+            // Crypt::decrypt($request['password'])
+            // dd($Customer);
+        if (count($Customer) && Hash::check(request()->passwordL, $Customer->first()->password)) {
+        //    if (count($Admin) && Hash::check(request()->password, $Admin->first()->password)) {
             $request->session()->put("loginUser", ["id" => $Customer[0]->id, "role" => "customer"]);
             return redirect('/');
         } else {
@@ -51,7 +57,7 @@ class LoginRegisterController extends Controller
         $newCustomer = new Customer;
         $newCustomer -> name     = $request->input('name'); 
         $newCustomer -> email    = $request->input('email');
-        $newCustomer -> password = $request->input('password');
+        $newCustomer -> password =  Hash::make($request->input('password'));
         $newCustomer->save();
 
         return back()->with('success', 'Successfully Register');

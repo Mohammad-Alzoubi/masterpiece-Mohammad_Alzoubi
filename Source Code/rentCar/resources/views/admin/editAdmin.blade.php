@@ -35,7 +35,7 @@
               </div>
               <div class="form-group">
                 <label for="password" class="control-label mb-1">Admin Password</label>
-                <input name="password" type="password" class="form-control" value="{{ $admin-> password }}">
+                <input name="password" type="password" class="form-control" >
                 @if ($errors->has('password'))
                 <div class="alert alert-danger">{{ $errors->first('password') }}</div>
                 @endif

@@ -175,3 +175,6 @@ Route::post('/register', 'loginRegisterController@register');
 Route::get('/logout', 'loginRegisterController@logout');
 // **********************************************
 
+
+
+

@@ -33,7 +33,10 @@
                 <input name="email" type="email" class="form-control" value="{{ old('email') }}">
                 @if ($errors->has('email'))
                 <div class="alert alert-danger">{{ $errors->first('email') }}</div>
+                @elseif($message = Session::get('failed'))
+                <p class="text-danger">{{ $message }}</p>
                 @endif
+
               </div>
               <div class="form-group">
                 <label for="password" class="control-label mb-1">Admin Password</label>
@@ -45,6 +48,9 @@
               <div class="form-group">
                 <label for="image" class="control-label mb-1">Admin Image</label>
                 <input name="image" type="file" class="form-control">
+                @if ($errors->has('image'))
+                <div class="alert alert-danger">{{ $errors->first('image') }}</div>
+                @endif
               </div>
               <div>
                 <button id="payment-button" style="background: #00D231" type="submit" class="btn btn-lg btn-info btn-block" name="submit">Add
